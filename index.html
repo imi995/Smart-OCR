@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart OCR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart OCR</h1>
+        <p>Extract text from your images</p>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <button onclick="extractText()">
+            Extract Text
+        </button>
+
+        <div id="status"></div>
+
+        <textarea id="result" placeholder="Your text will appear here..."></textarea>
+
+        <button onclick="copyText()">Copy Text</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
